@@ -1,1 +1,35 @@
-<!doctype HTML><html><head><meta name="viewport" content="width=device-width,user-scalable=no,minimum-scale=1,maximum-scale=1"><meta charset="utf-8"><title>sarteye.id AR-Web</title><script src="js/aframe-0.7.1.js"></script><script src="js/aframe-ar-2.2.2.min.js"></script><script src="js/main.js"></script></head><body style="margin: 0px; overflow: hidden;"><a-scene vr-mode-ui="enabled: false" embedded arjs="trackingMethod: best; debugUIEnabled: false"><a-assets><video id="dance" autoplay loop="true" src="assets/video-transparent.webm"></video></a-assets><a-marker preset="hiro"><a-entity scale="2.5 2.5 2.5" rotation="-65 0 0" position="0 0 0"><a-video src="#dance"></a-video></a-entity></a-marker><a-entity camera></a-entity></a-scene></body></html>
+<!doctype HTML><html><head><meta name="viewport" content="width=device-width,user-scalable=no,minimum-scale=1,maximum-scale=1"><meta charset="utf-8"><title>sarteye.id AR-Web</title><script src="js/aframe-0.7.1.js"></script><script src="js/aframe-ar-2.2.2.min.js"></script><script src="js/main.js"></script><style>#splash {
+  position: absolute;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  width: 200px;
+  height: 200px;
+
+  margin: auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loading {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 0.25rem solid rgba(255, 255, 255, 0.2);
+  border-top-color: white;
+  animation: spin 1s infinite linear;
+}</style></head><body style="margin: 0px; overflow: hidden;"><div id="splash"><div class="loading"></div></div><a-scene vr-mode-ui="enabled: false" embedded arjs="trackingMethod: best; debugUIEnabled: false"><a-assets><video id="dance" autoplay loop="true" src="assets/video-transparent.webm"></video></a-assets><a-marker preset="hiro"><a-entity scale="2.5 2.5 2.5" rotation="-65 0 0" position="0 0 0"><a-video src="#dance"></a-video></a-entity></a-marker><a-entity camera></a-entity></a-scene></body></html>

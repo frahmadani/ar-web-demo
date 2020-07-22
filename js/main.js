@@ -1,1 +1,1 @@
-console.log("lagi loading .............. !!!!!!!!"),document.addEventListener("DOMContentLoaded",function(){document.querySelector("a-scene").addEventListener("loaded",function(e){console.log("kelar nih loading-nyaa")})});
+console.log("lagi loading .............. !!!!!!!!"),document.addEventListener("DOMContentLoaded",function(){var e=document.querySelector("a-scene"),n=document.querySelector("#splash");e.addEventListener("loaded",function(e){console.log("kelar nih loading-nyaa"),n.style.display="none"})});
